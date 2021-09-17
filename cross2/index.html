@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Это игра крестики-нолики html-шаблон-->
+<head>
+    <!--Задаем мета-теги, подключаем стили и устанавливаем значок на вкладке-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <wrap>
+        <main>
+            <h1 class="header">TIC TAC TOE</h1><!--Здесь находятся главный заголовок страницы и далее кнопки управления(выбор своего знака)-->
+            <h2 class="header">CHOOSE THE SIGN TO START WITH</h2>
+            <div class="buttons">
+                <button class="choice but buttC" id="buttC">cross</button>
+                <button class="choice but buttZ" id="buttZ">zero</button>
+            </div>
+            <div class="mainField"><!--главное поле игры, будет реализовоно посредством grid-сетки-->
+                <div class="oneField"></div>
+                <div class="oneField"></div>
+                <div class="oneField"></div>
+                <div class="oneField"></div>
+                <div class="oneField"></div>
+                <div class="oneField"></div>
+                <div class="oneField"></div>
+                <div class="oneField"></div>
+                <div class="oneField"></div>
+            </div>
+            <!--кнопка сброса игры, активна только если сделан хотя-бы один ход-->
+            <button class="butt disableRes" onclick="reload()">RESET</button>
+            <div class="author"> <a href="https://vk.com/imefodev" class="onlyHref">made by Eli</a></div>
+            <div class="vers">0.1.1</div>
+        </main>
+    </wrap>
+<!--подключение скрипта игры-->
+    <script src="script.js"></script>
+</body>
+
+</html>
